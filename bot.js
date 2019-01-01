@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('message', message => {
-var prefix = "#";
+var prefix = "-";
  
     if (message.author.id === client.user.id) return;
     if (message.guild) {/Toxic Codes
