@@ -10,10 +10,10 @@ function forEachObject(obj, func) {
 client.on('ready',  () => {
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~Nexta Network~~~~~~~~~~~');
+console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~Nexta Shop~~~~~~~~~~~');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
 console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
-console.log(`Logged in as  * [ "  Nexta Network " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`); 
+console.log(`Logged in as  * [ "  Nexta Shop " ] servers! [ " ${client.guilds.size} " ] Users! [ " ${client.users.size} " ]`); 
 
 });
 
@@ -42,7 +42,7 @@ client.on('ready', function(){
             j = -1;
         }
         i = i+j;
-        client.user.setGame(setGame[i],`https://www.twitch.tv/NextaNetwork`);
+        client.user.setGame(setGame[i],`https://www.twitch.tv/Nexta-Shop`);
     }, ms);100000
 
 });
