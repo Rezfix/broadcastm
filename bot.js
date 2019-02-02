@@ -84,6 +84,17 @@ https://discord.gg/8MTAwpm
       }
   });
 
+client.on('message', async message => {  
+    let args = message.content.slice(3);   
+    if(message.content.startsWith(prefix + 'bc')) {  
+      if(!message.guild.members.get(message.author.id).hasPermission('ADMINISTRATOR')) return message.channel.send('Required Administrator Permission')
+         message.guild.members.forEach(m => {  
+        
+        m.send(args.replace('[user]', m).replace('[server]', m.guild.name).replace('[sender]', message.author.username))  //itzZa1D & Toxic Codes
+      })
+    }
+  })
+
 //Think You
   client.on('guildCreate', guild => {
     var embed = new Discord.RichEmbed()
